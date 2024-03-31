@@ -7,6 +7,7 @@
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 .primary-clr {
@@ -14,7 +15,7 @@ body {
 }
 
 .primary-font {
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -99,7 +100,7 @@ body {
 
 .layer {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     top: 0;
     bottom: 0;
     right: 0;
@@ -277,7 +278,7 @@ body {
 
 .home-content {
     position: absolute;
-    top: 0;
+    top: 40%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -290,24 +291,29 @@ body {
 /* ------------------------------------ About Start -------------------------------*/
 
 .about {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
+.about .container {
+margin: auto;
+width: 60%;
+    
+}
 
 
 .about-img {
     float: left;
     position: relative;
     margin-left: 50px;
-
+    width: 30%;
 }
 
 .about-img img {
     border: 5px solid transparent;
     border-radius: 10px;
     display: block;
-    width: 300px;
+    width: 100%;
     height: auto;
 }
 
@@ -322,9 +328,14 @@ body {
     z-index: -1;
 }
 
+.about-content{
+    float: left;
+    width: 65%;
+
+}
+
 .about-text {
     margin-left: 100px;
-    float: left;
 }
 
 .about-text h2 {
@@ -353,14 +364,13 @@ body {
     padding-bottom: 20px;
     margin-bottom: 20px;
     color: #555555;
-    font-size: 16px;
+    font-size: 23px;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 30px;
 
 }
 
 .about .profile {
-    float: left;
     margin-left: 100px;
     width: fit-content;
 }
@@ -1042,8 +1052,40 @@ textarea {
 
 
 
+@media screen and (max-width: 500px) {
 
-@media screen and (max-width: 992px) {
+    .nav-bar-text h2 {
+        margin-left: 50px;
+    }
+
+    .home h3 {
+        font-size: 16px; 
+    }
+    .home h1 {
+        font-size: 40px; 
+    }
+    .home h4 {
+        font-size: 18px;
+    }
+
+    .our-services {
+        width: 100%;
+    }
+
+    .portfolio-img {
+        width: 100%;
+    }
+    .about .container{
+        margin: 0;
+        width: 100%;
+background-color: #333;
+    }
+}
+
+
+
+
+/* @media screen and (max-width: 992px) and (min-width: 576px) {
 
     .nav-bar-text h2 {
         margin-left: 100px; 
@@ -1068,33 +1110,6 @@ textarea {
     }
 
 
+
     
-}
-
-
-
-@media screen and (max-width: 576px) {
-
-    .nav-bar-text h2 {
-        margin-left: 50px;
-    }
-
-    .home h3 {
-        font-size: 16px; 
-    }
-    .home h1 {
-        font-size: 40px; 
-    }
-    .home h4 {
-        font-size: 18px;
-    }
-
-    .our-services {
-        width: 100%;
-    }
-
-    .portfolio-img {
-        width: 100%;
-    }
-
-}
+} */
